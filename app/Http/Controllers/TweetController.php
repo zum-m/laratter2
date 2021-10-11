@@ -4,6 +4,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+// ↓2行追加
+use Validator;
+use App\Models\Tweet;
+
+
 class TweetController extends Controller
 {
     /**
@@ -13,7 +18,11 @@ class TweetController extends Controller
      */
     public function index()
     {
-        //
+        // return view('tweet.index'); ->10.4
+        return view('tweet.index', [
+            'tweets' => []
+        ]);
+
     }
 
     /**
@@ -23,7 +32,8 @@ class TweetController extends Controller
      */
     public function create()
     {
-        //
+        return view('tweet.create');
+
     }
 
     /**
