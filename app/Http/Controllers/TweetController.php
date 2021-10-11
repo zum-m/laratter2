@@ -19,8 +19,12 @@ class TweetController extends Controller
     public function index()
     {
         // return view('tweet.index'); ->10.4
+            // return view('tweet.index', [
+            //     'tweets' => []  ->10.6
+        $tweets = Tweet::getAllOrderByUpdated_at();
         return view('tweet.index', [
-            'tweets' => []
+            'tweets' => $tweets
+
         ]);
 
     }
