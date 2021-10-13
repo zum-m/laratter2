@@ -16,7 +16,7 @@ use App\Http\Controllers\TweetController;
 |
 */
 
-// ↓追加
+// ↓追加 10.4Route::getなら出てくるが。resourceって何？
 Route::resource('tweet', TweetController::class);
 
 

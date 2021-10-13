@@ -16,15 +16,16 @@ class TweetController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index()//一覧画面のviewへコントロール
     {
         // １０.３
         // return view('tweet.index'); ->10.4
             // return view('tweet.index', [
             //     'tweets' => []  ->10.6
         $tweets = Tweet::getAllOrderByUpdated_at();
-        return view('tweet.index', [
-            'tweets' => $tweets
+            // 10.4 追記
+            return view('tweet.index', [
+                'tweets' => []//tweetsって名前でデータを渡している
 
         ]);
 
