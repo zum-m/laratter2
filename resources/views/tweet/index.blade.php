@@ -22,7 +22,7 @@
                 <!-- 10.4$tweetsはコントローラーから渡される予定のもの 渡ってくるもの-->
                 <!-- p７８繰り返しのディレクティブ @foreach（$配列 as $変数） -->
                 <!-- このしたの$wteetはコントローラーから渡されるよでいでない時は $tweets is undifinedと出る -->
-                @foreach ($tweets as $tweet)  
+              @foreach ($tweets as $tweet)  
                 
                 <tr class="hover:bg-grey-lighter">
                   <td class="py-4 px-6 border-b border-grey-light">
@@ -33,7 +33,7 @@
                     </div>
                   </td>
                 </tr>
-                @endforeach
+              @endforeach
               </tbody>
             </table>
           </div>

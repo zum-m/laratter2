@@ -25,16 +25,17 @@ class TweetController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()//一覧画面のviewへコントロール//10.3
-    
+
     {
         // １０.３
         // return view('tweet.index'); ->10.4
-            // return view('tweet.index', [
-            //     'tweets' => []  ->10.6
+                // return view('tweet.index', [
+                //     'tweets' => []  ->10.6
+                // この上のでtweetsにからのデータを入れてindex.bladeに渡している
         $tweets = Tweet::getAllOrderByUpdated_at();
             // 10.4 追記
             return view('tweet.index', [
-                'tweets' => []//tweetsって名前でデータを渡している
+                'tweets' => []//tweetsって名前で空のデータをviewファイルに渡している
 
         ]);
 
