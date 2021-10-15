@@ -24,7 +24,8 @@ class TweetController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()//一覧画面のviewへコントロール
+    public function index()//一覧画面のviewへコントロール//10.3
+    
     {
         // １０.３
         // return view('tweet.index'); ->10.4
@@ -44,7 +45,7 @@ class TweetController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create() //ツイートを入力する画面
     {
         return view('tweet.create');
 
