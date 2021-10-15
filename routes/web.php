@@ -1,5 +1,8 @@
 <?php
 
+// ルーティングの確認は$ php artisan route:list
+
+
 use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\TweetController;//ここを追加１０.３
