@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
-use App\Http\Controllers\TweetController;
+use App\Http\Controllers\TweetController;//ここを追加１０.３
 
 
 /*
@@ -17,7 +17,7 @@ use App\Http\Controllers\TweetController;
 */
 
 // ↓追加 10.4Route::getなら出てくるが。resourceって何？
-Route::resource('tweet', TweetController::class);
+Route::resource('tweet', TweetController::class);//Route::resourceの意味は？
 
 
 Route::get('/', function () {
