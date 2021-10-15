@@ -1,10 +1,18 @@
 <?php
 
+// $ php artisan make:controller TweetController --resource
+// でコントローラーついか
+// コントローラとルーティングを作成する．今回のコントローラ名はTweetControllerとする．
+// --resourceをつけることで，よく使用する処理（代表的な CRUD 処理）を一括して作成することができる．
+
+
+// 
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-// ↓2行追加１０.３
+// ↓2行追加１０.３   中の処理で使いたいものへのしょうりゃく？
+// validatorとは？
 use Validator;
 use App\Models\Tweet;
 
